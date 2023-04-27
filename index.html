@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body p {
+            text-transform: uppercase;
+            color:red;
+            background-color: aqua;
+        }
+
+        @media screen (max-witdh: 600px) {
+            background-color: red;
+            
+        }
+        @media screen (min-witdh: 600px)  and (max-witdh: 768px){
+            background-color: yellow;
+        }
+        #name {
+            color: blue;
+        }
+        .lastname {
+            color: green !important;
+        }
+        .logo {
+            padding: 10px;
+            margin: 20px 30px 40px 50px;
+            border: 1px solid #000;
+        }
+        .cot {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <img src="./hero.jpg" alt="anh hero">
+    <p id="name" class="lastname">Nguyễn Hội</p>
+    <ol>
+        <li>
+            Trang Chủ
+        </li>
+        <li>
+            Liên Hệ
+        </li>
+    </ol>
+    <div class="logo">
+        My logo
+    </div>
+
+    <div class="cot">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+    </div>
+  
+</body>
+</html>
